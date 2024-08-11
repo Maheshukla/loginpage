@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .register-container {
+            width: 400px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h3 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 15px;
+        }
+        .form-row {
+            display: flex;
+            justify-content: space-between;
+        }
+        .form-row .col {
+            width: 48%;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            background-color: #e13df7;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #4cae4c;
+        }
+    </style>
+</head>
+<body>
+    <div class="register-container">
+        <h3>Registration Form</h3>
+        <form>
+            <div class="form-group">
+                <input type="text" placeholder="First Name" required>
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Last Name" required>
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Phone Number" required>
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Country" required>
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Address" required>
+            </div>
+            <div class="form-row">
+                <div class="col">
+                    <input type="text" placeholder="City" required>
+                </div>
+                <div class="col">
+                    <input type="text" placeholder="Zip" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="About Yourself">
+            </div>
+            <div class="form-group">
+                <input type="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <input type="email" placeholder="Repeat Email Address" required>
+            </div>
+            <div class="form-row">
+                <div class="col">
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <div class="col">
+                    <input type="password" placeholder="Confirm Password" required>
+                </div>
+            </div>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>
